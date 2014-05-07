@@ -1,197 +1,46 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-  <html>
-    <head>
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
 
-      <title>beyounic</title>
-      <link rel="apple-touch-icon-precomposed" href="icon.png"/>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="shortcut icon" href="/static/images/favicon.png">
+	<link rel="stylesheet" href="/static/css/style.css">
 
-      <meta name="viewport" content="width=device-width" />
+	
+	<title>Beyounic</title>
+	
+</head>
 
-      <meta name="description" content="We are a small team of people who are passionate about finding simple solutions to complex problems. Our philosophy lies in doing: we don't talk much, we build." />
-      <meta name="keywords" content="Nick Balestra,  Romano Sensibile, Flavio Copes, Johan Janssens" />
-
-      <link rel="stylesheet" media="only screen and (max-device-width:480px)" type="text/css" href="css/mobile_style.css" />
-      <link rel="stylesheet" media="only screen and (max-width: 480px)" type="text/css" href="css/mobile_style.css" />
-      <link rel="stylesheet" media="only screen and (min-width: 481px) and (max-width: 800px)" type="text/css" href="css/tablet_style.css" />
-      <link rel="stylesheet" media="only screen and (min-width: 801px) and (max-width: 1280px)" type="text/css" href="css/style.css" />
-      <link rel="stylesheet" media="only screen and (min-width: 1281px)" type="text/css" href="css/big_style.css" />
-
-
-      <link rel="stylesheet" href="css/fancybox/jquery.fancybox-buttons.css">
-      <link rel="stylesheet" href="css/fancybox/jquery.fancybox-thumbs.css">
-      <link rel="stylesheet" href="css/fancybox/jquery.fancybox.css">
-
-      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-      <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/jquery-ui.min.js"></script>
-      <script src="js/fancybox/jquery.easing-1.3.pack.js"></script>
-      <script src="js/fancybox/jquery.fancybox.js"></script>
-
-       <script type="text/javascript">
-          $(document).ready(function() {
-
-            $(".video").fancybox({
-              maxWidth  : 780,
-              maxHeight : 612,
-              fitToView : false,
-              width   : '780',
-              height    : '612',
-              autoSize  : true,
-              closeClick  : false,
-              openEffect  : 'elastic',
-              closeEffect : 'none'
-
-            });
-
-            $(".profile").hover(function() {
-              $('img.fade', this).stop().fadeTo(200, 1);
-              $(".link", this).stop().fadeTo(200, 1);
-              $("h4", this).animate({"color":"#4C87B8"}, 200);
-            },
-
-            function() {
-              $('img.fade', this).stop().fadeTo(50, 0);
-              $('.link', this).stop().fadeTo(50, 0);
-              $("h4", this).animate({"color":"#222222"}, 50);
-            });
-          });
-        </script>
-
-        <script type="text/javascript">
-          jQuery.fn.fadeThenSlideToggle = function(speed, easing, callback) {
-            if (this.is(":hidden")) {
-              return this.slideDown(speed, easing).fadeTo(speed, 1, easing, callback);
-            } else {
-              return this.fadeTo(speed, 0, easing).slideUp(speed, easing, callback);
-            }
-          };
-
-          $(document).ready(function() {
-            $(".fulltext").hide();
-            $(".highlights").click(function() {
-              $('.fulltext', this).fadeThenSlideToggle(200);
-            });
-          });
-       </script>
+<body>
+  
 
 
-    </head>
-    <body>
-      <div class="wrapper">
+<section id="wrapper">
+  <header id="header">
+    <img id="logo" class="2x" src="/static/images/beyounic-logo.svg"/>
+      <h1>Beyounic</h1>
+    <h2>be unique \ˈbē-,yu̇-ˈnēk\</h2>
+  </header> <!--header-->
 
-
-                <div id="logo">
-                  <img src="beyounic_logo.png" />
-                </div>
-
-                <div class="hline"></div>
-
-                <div id="header"><h1>We are a small team of people<br /> who are passionate about finding simple solutions to complex problems.<br />
-
-                </h1></div>
-
-                <div class="hline"></div>
-
-                  <div class="team">
-
-                    <div class="profile">
-                      <div class="thumbnail" style="background-image:url(nick.png)">
-                        <img class="fade" src="nick_color.png">
-                      </div>
-                      <a class="link" href="http://nickbalestra.tumblr.com" target="_blank">Blog</a>
-                      <h4>Nick Balestra</h4>
-                      <small>Nick started developing social web projects back in 2004 at the University of Lugano. He co-founded Beyounic and leads our product design and vision.</small>
-                    </div>
-
-                    <div class="profile">
-                      <div class="thumbnail" style="background-image:url(romano.png)">
-                        <img class="fade" src="romano_color.png">
-                      </div>
-                      <a class="link" href="http://www.twitter.com/romanosensibile" target="_blank">Twitter</a>
-                      <h4>Romano Sensibile</h4>
-                      <small>Romano fell in love with interaction design, UX and socialmedia back at the University of Lugano. He co-founded Beyounic and manages our operations.</small>
-                    </div>
-
-                    <div class="profile">
-                      <div class="thumbnail" style="background-image:url(flavio.png)">
-                        <img class="fade" src="flavio_color.png">
-                      </div>
-                      <a class="link" href="http://www.twitter.com/flaviocopes" target="_blank">Twitter</a>
-                      <h4>Flavio Copes</h4>
-                      <small>Flavio got his software engineering degree at the Polytechnic University of Milan. He is our lead developer.</small>
-                    </div>
-
-                    <div class="profile">
-                      <div class="thumbnail" style="background-image:url(matteo.png)">
-                        <img class="fade" src="matteo_color.png">
-                      </div>
-                      <a class="link" href="http://www.twitter.com/matteoagosti" target="_blank">Twitter</a>
-                      <h4>Matteo Agosti</h4>
-                      <small>Matteo got his master degree in computer engineering at University of Parma. He is our lead architect.</small>
-                    </div>
-
-                    <div class="profile">
-                      <div class="thumbnail" style="background-image:url(bojan.png)">
-                        <img class="fade" src="bojan_color.png">
-                      </div>
-                      <a class="link" href="http://pinterest.com/bojanpopic" target="_blank">Pinterest</a>
-                      <h4>Bojan Popić</h4>
-                      <small>Bojan graduated in Computer Science at University of Novi Sad. He is our lead support and product manager.</small>
-                    </div>
-
-                    <div class="profile">
-                      <div class="thumbnail" style="background-image:url(johan.png)">
-                        <img class="fade" src="johan_color.png">
-                      </div>
-                      <a class="link" href="http://about.me/johanjanssens" target="_blank">About me</a>
-                      <h4>Johan Janssens</h4>
-                      <small>Johan co-founded Joomla, piloting the project throughout its early years as lead architect. He is our advisor.</small>
-                    </div>
+  <p>Beyounic SA is a Swiss-based company. Our principal investor is Agire Invest. Our mission is to make event organizer's lives easier, simpler, and more enjoyable.</p>
+  <article id="main-content">
+  	<a href="http://ohanah.com"><img id="ohanah-logo" class="2x" src="/static/images/ohanah-logo.svg"/></a>
+  	<p><a href="http://ohanah.com">Ohanah</a> is an open platform from beyounic. In other words, ohanah is: all you need to manage events online, open source, self hosted and available in 38 languages.</p>
+  	<p>The new Ohanah launched in 2012. It is used by thousands and it has created more then a milion events.</p>
+  	<p>We want great talent and inspiring leaders in all areas: from business operations to product design and software engineering. If you want to join a small and distributed startup please get in touch: <a href="mailto:hello@beyounic.com">hello@beyounic.com</a></p>
+  	<p>
+  </article>
+  
+ 
+</section> <!--wrapper-->
 
 
 
-                  </div>
-                  <div class='cleaner'>&nbsp;</div>
-                  <!--
-                  <div id="highlights-container">
-
-
-                    <div class="highlights">
-
-                      <p class="news-title"><strong>11th November 2012:</strong> Winning the node.js conference hackathon. <a class="readmore">Read more</a></p>
-
-                      <div class="fulltext">After attending the awesome node.js conference in Italy (nodejsconf.it) we took part in the hackathon contest, and we won the 1st prize with a little project called <a href="http://www.andthewinner.is" target="_blank">andthewinner.is</a>: A platform to create viral contests on twitter in seconds, making realtime voting seamless.
-                      </div>
-
-                    </div>
-
-
-
-
-                    <div class="highlights">
-
-                      <p class="news-title"><strong>27th February 2012:</strong> Announcing our first seed round investment. <a class="readmore">Read more</a></p>
-
-                      <div class="fulltext">We are excited to announce that we secured our first seed round investment of $350,000 by <a href="http://www.agire.ch" target="_blank">Agire Invest</a>. Thanks to this funding we will expand our team and we will launch our projects, on which we have been working hard since we founded Beyounic. We would like to thank our investors and everybody who have helped us so far. The journey is the reward.
-                      </div>
-
-                    </div>
-
-                   </div>
-                 -->
-
-        <div class="push"></div>
-
-      </div>
-
-      <div class="footer">
-
-        <div id="contact"><a href="mailto:info@beyounic.com"><img src="contact.png" alt="ohanah app" /></a></div>
-        <div id="entrepreneurs">
-          <p style=""><a class="video fancybox.iframe" href="http://www.youtube.com/v/T6MhAwQ64c0?rel=0;autoplay=1">Entrepreneurs can change the world</a>
-          </p>
-        </div>
-
-      </div>
-    </body>
-  </html>
+  
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script src="/static/js/main.js"></script>
+	
+</body>
+</html>
