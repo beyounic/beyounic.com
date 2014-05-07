@@ -58,10 +58,9 @@ a#documentation {
 
 #ohanah-logo {
 	display:inline-block;
-	width:184px;
-	height:70px;
+	width:165px;
 	margin-bottom:40px;
-	margin-top:40px;
+	margin-top:10px;
 }
 
 #badge {
@@ -74,7 +73,7 @@ Typography
 /*Accent color*/
 a {
 	text-decoration:none;
-	color:#666;
+	color:#555;
 	font-weight:400;
 }
 
